@@ -7,7 +7,6 @@ tg.MainButton.color = "#2cab37";
 
 tg.MainButton.setText("Continue");
 
-let item = "";
 
 let espresso = document.getElementById("espresso");
 let cappuccino = document.getElementById("cappuccino");
@@ -15,6 +14,8 @@ let latte = document.getElementById("latte");
 let earl_grey_tea = document.getElementById("earl_grey_tea");
 let lime_frosted_coconut_bar = document.getElementById("lime-frosted_coconut_bar");
 let chocolate_brownie = document.getElementById("chocolate_brownie");
+
+let item = "";
 
 espresso.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
@@ -26,7 +27,7 @@ espresso.addEventListener("click", function(){
     }
 });
 
-espresso.addEventListener("click", function(){
+cappuccino.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
@@ -36,7 +37,7 @@ espresso.addEventListener("click", function(){
     }
 });
 
-espresso.addEventListener("click", function(){
+latte.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
@@ -46,7 +47,7 @@ espresso.addEventListener("click", function(){
     }
 });
 
-espresso.addEventListener("click", function(){
+earl_grey_tea.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
@@ -56,7 +57,7 @@ espresso.addEventListener("click", function(){
     }
 });
 
-espresso.addEventListener("click", function(){
+lime_frosted_coconut_bar.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
@@ -66,7 +67,7 @@ espresso.addEventListener("click", function(){
     }
 });
 
-espresso.addEventListener("click", function(){
+chocolate_brownie.addEventListener("click", function(){
     if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }
@@ -75,6 +76,7 @@ espresso.addEventListener("click", function(){
         tg.MainButton.show();
     }
 });
+
 
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
     tg.sendData(item);
