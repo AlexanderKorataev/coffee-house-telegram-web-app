@@ -18,63 +18,34 @@ let chocolate_brownie = document.getElementById("chocolate_brownie");
 let item = "";
 
 espresso.addEventListener("click", function(){
-    if (tg.MainButton.isVisible) {
-        tg.MainButton.hide();
-    }
-    else {
-        item = "espresso";
-        tg.MainButton.show();
-    }
+    item = "espresso";
+    tg.MainButton.show();
 });
 
 cappuccino.addEventListener("click", function(){
-    if (tg.MainButton.isVisible) {
-        tg.MainButton.hide();
-    }
-    else {
-        item = "cappuccino";
-        tg.MainButton.show();
-    }
+    item = "cappuccino";
+    tg.MainButton.show();
 });
 
 latte.addEventListener("click", function(){
-    if (tg.MainButton.isVisible) {
-        tg.MainButton.hide();
-    }
-    else {
-        item = "latte";
-        tg.MainButton.show();
-    }
+    item = "latte";
+    tg.MainButton.show();
 });
 
 earl_grey_tea.addEventListener("click", function(){
-    if (tg.MainButton.isVisible) {
-        tg.MainButton.hide();
-    }
-    else {
-        item = "earl_grey_tea";
-        tg.MainButton.show();
-    }
+    item = "earl_grey_tea";
+    tg.MainButton.show();
 });
 
 lime_frosted_coconut_bar.addEventListener("click", function(){
-    if (tg.MainButton.isVisible) {
-        tg.MainButton.hide();
-    }
-    else {
-        item = "lime_frosted_coconut_bar";
-        tg.MainButton.show();
-    }
+
+    item = "lime_frosted_coconut_bar";
+    tg.MainButton.show();
 });
 
 chocolate_brownie.addEventListener("click", function(){
-    if (tg.MainButton.isVisible) {
-        tg.MainButton.hide();
-    }
-    else {
-        item = "chocolate_brownie";
-        tg.MainButton.show();
-    }
+    item = "chocolate_brownie";
+    tg.MainButton.show();
 });
 
 
